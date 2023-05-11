@@ -13,6 +13,9 @@
 		6330C7672A0CCE9A007873BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6330C7652A0CCE9A007873BA /* Main.storyboard */; };
 		6330C7692A0CCE9B007873BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6330C7682A0CCE9B007873BA /* Assets.xcassets */; };
 		6330C76C2A0CCE9B007873BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6330C76A2A0CCE9B007873BA /* LaunchScreen.storyboard */; };
+		6330C7752A0CCECE007873BA /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6330C7742A0CCECE007873BA /* CryptoSwift */; };
+		6330C7772A0CD293007873BA /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6330C7762A0CD293007873BA /* RSA.swift */; };
+		6330C7792A0CD4A6007873BA /* Curve25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6330C7782A0CD4A6007873BA /* Curve25519.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		6330C7682A0CCE9B007873BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6330C76B2A0CCE9B007873BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6330C76D2A0CCE9B007873BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6330C7762A0CD293007873BA /* RSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		6330C7782A0CD4A6007873BA /* Curve25519.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curve25519.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6330C7752A0CCECE007873BA /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +65,12 @@
 				6330C75F2A0CCE9A007873BA /* AppDelegate.swift */,
 				6330C7612A0CCE9A007873BA /* SceneDelegate.swift */,
 				6330C7632A0CCE9A007873BA /* ViewController.swift */,
+				6330C7762A0CD293007873BA /* RSA.swift */,
 				6330C7652A0CCE9A007873BA /* Main.storyboard */,
 				6330C7682A0CCE9B007873BA /* Assets.xcassets */,
 				6330C76A2A0CCE9B007873BA /* LaunchScreen.storyboard */,
 				6330C76D2A0CCE9B007873BA /* Info.plist */,
+				6330C7782A0CD4A6007873BA /* Curve25519.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = Crypto;
+			packageProductDependencies = (
+				6330C7742A0CCECE007873BA /* CryptoSwift */,
+			);
 			productName = Crypto;
 			productReference = 6330C75C2A0CCE9A007873BA /* Crypto.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 6330C7532A0CCE9A007873BA;
+			packageReferences = (
+				6330C7732A0CCECE007873BA /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = 6330C75D2A0CCE9A007873BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +154,8 @@
 			files = (
 				6330C7642A0CCE9A007873BA /* ViewController.swift in Sources */,
 				6330C7602A0CCE9A007873BA /* AppDelegate.swift in Sources */,
+				6330C7772A0CD293007873BA /* RSA.swift in Sources */,
+				6330C7792A0CD4A6007873BA /* Curve25519.swift in Sources */,
 				6330C7622A0CCE9A007873BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6330C7732A0CCECE007873BA /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6330C7742A0CCECE007873BA /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6330C7732A0CCECE007873BA /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6330C7542A0CCE9A007873BA /* Project object */;
 }
