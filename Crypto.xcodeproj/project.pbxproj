@@ -24,6 +24,8 @@
 		633524B32A0E25540074A62D /* MyCFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 633524B22A0E25540074A62D /* MyCFile.c */; };
 		633524B52A0E29070074A62D /* BigLittle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524B42A0E29070074A62D /* BigLittle.swift */; };
 		633524B72A0E2EA00074A62D /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524B62A0E2EA00074A62D /* Bard.swift */; };
+		633524B92A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524B82A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift */; };
+		633524BB2A0E31D70074A62D /* WithUnsafeBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524BA2A0E31D70074A62D /* WithUnsafeBytes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		633524B22A0E25540074A62D /* MyCFile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MyCFile.c; sourceTree = "<group>"; };
 		633524B42A0E29070074A62D /* BigLittle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigLittle.swift; sourceTree = "<group>"; };
 		633524B62A0E2EA00074A62D /* Bard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bard.swift; sourceTree = "<group>"; };
+		633524B82A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES_CBC_CryptoSwift.swift; sourceTree = "<group>"; };
+		633524BA2A0E31D70074A62D /* WithUnsafeBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithUnsafeBytes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				633524B02A0E25540074A62D /* Crypto-Bridging-Header.h */,
 				633524B42A0E29070074A62D /* BigLittle.swift */,
 				633524B62A0E2EA00074A62D /* Bard.swift */,
+				633524B82A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift */,
+				633524BA2A0E31D70074A62D /* WithUnsafeBytes.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -188,9 +194,11 @@
 				6330C7602A0CCE9A007873BA /* AppDelegate.swift in Sources */,
 				633524AD2A0E1C2B0074A62D /* AES_CBC_Example2.swift in Sources */,
 				633524A72A0DCDE00074A62D /* HMAC.swift in Sources */,
+				633524B92A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift in Sources */,
 				633524B52A0E29070074A62D /* BigLittle.swift in Sources */,
 				6330C7772A0CD293007873BA /* RSA.swift in Sources */,
 				633524B32A0E25540074A62D /* MyCFile.c in Sources */,
+				633524BB2A0E31D70074A62D /* WithUnsafeBytes.swift in Sources */,
 				6330C7792A0CD4A6007873BA /* Curve25519.swift in Sources */,
 				6330C7622A0CCE9A007873BA /* SceneDelegate.swift in Sources */,
 				633524AF2A0E1EC10074A62D /* Byte.swift in Sources */,

@@ -52,7 +52,12 @@ class P256Curve {
             outputByteCount: 32
         )
         
-        print(symmetricKey)
+        let d = AES256Util.encrypt(string: "Hello", key: "Hello")
+        print("===========AES CBC============")
+        print(d)
+        let c = AES256Util.decrypt(encoded: d, key: "Hello")
+        print(c)
+        print("===========AES CBC============")
         
         do {
             try printPayload(symmetricKey: symmetricKey)

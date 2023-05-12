@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         // CBC()
         
-        bigLittle()
+        ok()
     }
     
     
