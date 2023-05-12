@@ -44,6 +44,7 @@ class P256Curve {
         print("shared1 == shared2 동일한 공유키 : \(shared1 == shared2)")
         
         // Derive a symmetric key from the shared secret.
+        // HKDF(HMAC-based Key Derivation Function)
         let symmetricKey = shared1.hkdfDerivedSymmetricKey(
             using: SHA256.self,
             salt: Data(),
@@ -85,15 +86,19 @@ class P256Curve {
         
         let decrypted = try AES.GCM.open(sealedBox, using: symmetricKey)
         
+        print("===========plaintext============")
+        print(plaintext)
+        print("===========ciphertext============")
+        
         print("===========ciphertext============")
         print(sealedBox.ciphertext.base64EncodedString())
         print("===========ciphertext============")
         
         let decryptedText = String(data: decrypted, encoding: .utf8) ?? ""
         
-        print("===========decryptedText============")
+        print("==========decryptedText==========")
         print(decryptedText)
-        print("===========decryptedText============")
+        print("==========decryptedText==========")
         
         let ciphertext = sealedBox.ciphertext
         let tag = sealedBox.tag
