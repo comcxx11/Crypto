@@ -41,7 +41,7 @@ class P256Curve {
         // 공유 비밀키 확인
         print(shared1)
         print(shared2)
-        print(shared1 == shared2)
+        print("shared1 == shared2 동일한 공유키 : \(shared1 == shared2)")
         
         // Derive a symmetric key from the shared secret.
         let symmetricKey = shared1.hkdfDerivedSymmetricKey(
