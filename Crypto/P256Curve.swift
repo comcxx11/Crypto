@@ -60,7 +60,7 @@ class P256Curve {
             print(error)
         }
         
-        
+        // 단방향 암호화 (signature)
         let message = "This is a test message."
         let hmac = HMAC<SHA256>.authenticationCode(for: message.data(using: .utf8)!, using: SymmetricKey(data: shared1))
         let hmacData = Data(hmac)
