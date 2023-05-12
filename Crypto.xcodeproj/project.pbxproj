@@ -22,6 +22,8 @@
 		633524AD2A0E1C2B0074A62D /* AES_CBC_Example2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524AC2A0E1C2B0074A62D /* AES_CBC_Example2.swift */; };
 		633524AF2A0E1EC10074A62D /* Byte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524AE2A0E1EC10074A62D /* Byte.swift */; };
 		633524B32A0E25540074A62D /* MyCFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 633524B22A0E25540074A62D /* MyCFile.c */; };
+		633524B52A0E29070074A62D /* BigLittle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524B42A0E29070074A62D /* BigLittle.swift */; };
+		633524B72A0E2EA00074A62D /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524B62A0E2EA00074A62D /* Bard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		633524B02A0E25540074A62D /* Crypto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crypto-Bridging-Header.h"; sourceTree = "<group>"; };
 		633524B12A0E25540074A62D /* MyCFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCFile.h; sourceTree = "<group>"; };
 		633524B22A0E25540074A62D /* MyCFile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MyCFile.c; sourceTree = "<group>"; };
+		633524B42A0E29070074A62D /* BigLittle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigLittle.swift; sourceTree = "<group>"; };
+		633524B62A0E2EA00074A62D /* Bard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				633524B12A0E25540074A62D /* MyCFile.h */,
 				633524B22A0E25540074A62D /* MyCFile.c */,
 				633524B02A0E25540074A62D /* Crypto-Bridging-Header.h */,
+				633524B42A0E29070074A62D /* BigLittle.swift */,
+				633524B62A0E2EA00074A62D /* Bard.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -175,12 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633524B72A0E2EA00074A62D /* Bard.swift in Sources */,
 				633524AB2A0E1A610074A62D /* AES_CBC_Example1.swift in Sources */,
 				6330C7642A0CCE9A007873BA /* ViewController.swift in Sources */,
 				633524A92A0DCFDE0074A62D /* P256Curve.swift in Sources */,
 				6330C7602A0CCE9A007873BA /* AppDelegate.swift in Sources */,
 				633524AD2A0E1C2B0074A62D /* AES_CBC_Example2.swift in Sources */,
 				633524A72A0DCDE00074A62D /* HMAC.swift in Sources */,
+				633524B52A0E29070074A62D /* BigLittle.swift in Sources */,
 				6330C7772A0CD293007873BA /* RSA.swift in Sources */,
 				633524B32A0E25540074A62D /* MyCFile.c in Sources */,
 				6330C7792A0CD4A6007873BA /* Curve25519.swift in Sources */,
@@ -341,6 +349,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +381,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

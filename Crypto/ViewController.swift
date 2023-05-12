@@ -24,13 +24,7 @@ class ViewController: UIViewController {
         
         // CBC()
         
-        byte()
-        
-        let a = sum(10, 20)
-        
-        print(a)
-        printByte()
-        test()
+        bigLittle()
     }
     
     
