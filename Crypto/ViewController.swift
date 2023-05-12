@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        do {
+            try P256Curve.run()
+        } catch {
+            print(error)
+        }
     }
     
     
