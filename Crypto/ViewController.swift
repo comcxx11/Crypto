@@ -21,6 +21,16 @@ class ViewController: UIViewController {
         } catch {
             print(error)
         }
+        
+        // CBC()
+        
+        byte()
+        
+        let a = sum(10, 20)
+        
+        print(a)
+        printByte()
+        test()
     }
     
     
