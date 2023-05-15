@@ -22,15 +22,8 @@ class ViewController: UIViewController {
             print(error)
         }
         
-        // CBC()
-        
-        ok()
-        
-        do {
-            try Test.run()
-        } catch {
-            print(error)
-        }
+        iOS_Android.run()
+        iOS_Android.run()
     }
     
     

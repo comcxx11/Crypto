@@ -27,6 +27,8 @@
 		633524B92A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524B82A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift */; };
 		633524BB2A0E31D70074A62D /* WithUnsafeBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633524BA2A0E31D70074A62D /* WithUnsafeBytes.swift */; };
 		6387FD942A11E7E0002E2CFE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387FD932A11E7E0002E2CFE /* Auth.swift */; };
+		6387FD962A11F7F4002E2CFE /* iOS_Android.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387FD952A11F7F4002E2CFE /* iOS_Android.swift */; };
+		6387FD982A11FDCA002E2CFE /* P256Curve_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387FD972A11FDCA002E2CFE /* P256Curve_Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		633524B82A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES_CBC_CryptoSwift.swift; sourceTree = "<group>"; };
 		633524BA2A0E31D70074A62D /* WithUnsafeBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithUnsafeBytes.swift; sourceTree = "<group>"; };
 		6387FD932A11E7E0002E2CFE /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		6387FD952A11F7F4002E2CFE /* iOS_Android.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Android.swift; sourceTree = "<group>"; };
+		6387FD972A11FDCA002E2CFE /* P256Curve_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P256Curve_Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				633524B82A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift */,
 				633524BA2A0E31D70074A62D /* WithUnsafeBytes.swift */,
 				6387FD932A11E7E0002E2CFE /* Auth.swift */,
+				6387FD952A11F7F4002E2CFE /* iOS_Android.swift */,
+				6387FD972A11FDCA002E2CFE /* P256Curve_Test.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -199,12 +205,14 @@
 				633524A72A0DCDE00074A62D /* HMAC.swift in Sources */,
 				6387FD942A11E7E0002E2CFE /* Auth.swift in Sources */,
 				633524B92A0E2FC50074A62D /* AES_CBC_CryptoSwift.swift in Sources */,
+				6387FD962A11F7F4002E2CFE /* iOS_Android.swift in Sources */,
 				633524B52A0E29070074A62D /* BigLittle.swift in Sources */,
 				6330C7772A0CD293007873BA /* RSA.swift in Sources */,
 				633524B32A0E25540074A62D /* MyCFile.c in Sources */,
 				633524BB2A0E31D70074A62D /* WithUnsafeBytes.swift in Sources */,
 				6330C7792A0CD4A6007873BA /* Curve25519.swift in Sources */,
 				6330C7622A0CCE9A007873BA /* SceneDelegate.swift in Sources */,
+				6387FD982A11FDCA002E2CFE /* P256Curve_Test.swift in Sources */,
 				633524AF2A0E1EC10074A62D /* Byte.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
