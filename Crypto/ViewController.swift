@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         // CBC()
         
         ok()
+        
+        do {
+            try Test.run()
+        } catch {
+            print(error)
+        }
     }
     
     
