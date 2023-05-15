@@ -57,6 +57,7 @@
 		6387FD932A11E7E0002E2CFE /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		6387FD952A11F7F4002E2CFE /* iOS_Android.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Android.swift; sourceTree = "<group>"; };
 		6387FD972A11FDCA002E2CFE /* P256Curve_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P256Curve_Test.swift; sourceTree = "<group>"; };
+		6387FD992A120C21002E2CFE /* ECC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ECC.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 				6330C7782A0CD4A6007873BA /* Curve25519.swift */,
 				633524A62A0DCDE00074A62D /* HMAC.swift */,
 				633524A82A0DCFDE0074A62D /* P256Curve.swift */,
+				6387FD972A11FDCA002E2CFE /* P256Curve_Test.swift */,
 				633524AA2A0E1A610074A62D /* AES_CBC_Example1.swift */,
 				633524AC2A0E1C2B0074A62D /* AES_CBC_Example2.swift */,
 				633524AE2A0E1EC10074A62D /* Byte.swift */,
@@ -113,7 +115,7 @@
 				633524BA2A0E31D70074A62D /* WithUnsafeBytes.swift */,
 				6387FD932A11E7E0002E2CFE /* Auth.swift */,
 				6387FD952A11F7F4002E2CFE /* iOS_Android.swift */,
-				6387FD972A11FDCA002E2CFE /* P256Curve_Test.swift */,
+				6387FD992A120C21002E2CFE /* ECC.md */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
