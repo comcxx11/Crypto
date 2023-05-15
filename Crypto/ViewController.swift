@@ -6,9 +6,11 @@
 //
 
 import UIKit
-import Security
+//import Security
 import CryptoKit
 import CryptoSwift
+import Security
+// import CryptoTokenKit
 
 // https://www.kodeco.com/10846296-introducing-cryptokit
 // Curve25519
@@ -22,6 +24,63 @@ class ViewController: UIViewController {
         } catch {
             print(error)
         }
+    }
+    
+    private func HMAC() {
+        
+    }
+    /**
+     *  주체(subject): 인증서의 소유자를 나타내는 정보.
+     *  발급자(issuer): 인증서를 발행한 인증 기관의 정보.
+     *  유효 기간: 인증서의 유효 기간(시작일과 종료일).
+     *  공개 키: 인증서 소유자의 공개 키.
+     *  디지털 서명: 인증 기관의 개인 키로 서명된 인증서의 일부.
+     *  확장 필드: 부가적인 정보를 담을 수 있는 추가 필드.
+     */
+    private func X905Certificate() {
+        // X.509 인증서 데이터
+        let certificateData = Data(base64Encoded: "YOUR_CERTIFICATE_DATA")!
+
+        // 인증서 파싱
+        guard let certificate = SecCertificateCreateWithData(nil, certificateData as CFData) else {
+            return
+        }
+
+        // 인증서 정보 가져오기
+
+        // 주체(subject) 정보
+        if let subjectSummary = SecCertificateCopySubjectSummary(certificate) {
+            let subjectSummaryString = String(describing: subjectSummary)
+            print("주체(subject): \(subjectSummaryString)")
+        }
+        
+        // 공개 키 가져오기
+        if let publicKey = SecCertificateCopyKey(certificate) {
+            // 공개 키로 작업
+            // ...
+        }
+        
+        // 디지털 서명 확인
+//        if let signatureAlgorithm = SecCertificateCopySignatureAlgorithm(certificate) {
+//            // 디지털 서명 알고리즘 정보
+//            let signatureAlgorithmString = String(describing: signatureAlgorithm)
+//            print("디지털 서명 알고리즘: \(signatureAlgorithmString)")
+//
+//            // 인증서 검증
+//            let policy = SecPolicyCreateBasicX509()
+//            var trust: SecTrust?
+//            let trustCreationStatus = SecTrustCreateWithCertificates(certificate, policy, &trust)
+//            if trustCreationStatus == errSecSuccess, let trust = trust {
+//                let trustEvaluationStatus = SecTrustEvaluate(trust, nil)
+//                if trustEvaluationStatus == errSecSuccess {
+//                    print("인증서가 유효합니다.")
+//                } else {
+//                    print("인증서가 유효하지 않습니다.")
+//                }
+//            } else {
+//                print("신뢰 체인 생성에 실패하였습니다.")
+//            }
+//        }
     }
     
     private func CBC() throws {
