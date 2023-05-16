@@ -38,12 +38,27 @@ class ViewController: UIViewController {
             let sharedKey1 = try SecurityCBC().generateSharedKey(privateKey: keyPair.privateKey, publicKey: keyPair2.publicKey)
             let sharedKey2 = try SecurityCBC().generateSharedKey(privateKey: keyPair2.privateKey, publicKey: keyPair.publicKey)
             print("Shared Key: \(sharedKey1)")
+            print("Shared Key: \(sharedKey1.bytes)")
             print("Shared Key: \(sharedKey1.base64EncodedString())")
             print("Shared Key: \(sharedKey2)")
+            print("Shared Key: \(sharedKey2.bytes)")
             print("Shared Key: \(sharedKey2.base64EncodedString())")
             
             try SecurityCBC().HMAC_Test2(key: sharedKey1.bytes)
             try SecurityCBC().HMAC_Test2(key: sharedKey2.bytes)
+            
+            do {
+                let ivDecodes : Array<UInt8> = Array("0123456789012345".utf8)
+                let a = try AES(key: sharedKey1.bytes, blockMode: CryptoSwift.CBC(iv: ivDecodes), padding: .pkcs5)
+                let b = try a.encrypt("Encrypt Me".bytes)
+                print(b.toBase64())
+                let datas = Data(base64Encoded: b.toBase64())
+                let result = try a.decrypt(datas!.bytes)
+                
+                print(String(bytes: result, encoding: .utf8) ?? "")
+            } catch {
+                print(error)
+            }
         } catch {
             print("ECDH 키 쌍 생성 에러: \(error)")
         }
