@@ -29,6 +29,7 @@
 		6387FD942A11E7E0002E2CFE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387FD932A11E7E0002E2CFE /* Auth.swift */; };
 		6387FD962A11F7F4002E2CFE /* iOS_Android.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387FD952A11F7F4002E2CFE /* iOS_Android.swift */; };
 		6387FD982A11FDCA002E2CFE /* P256Curve_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387FD972A11FDCA002E2CFE /* P256Curve_Test.swift */; };
+		6387FD9B2A13025B002E2CFE /* SecurityCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387FD9A2A13025B002E2CFE /* SecurityCBC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		6387FD952A11F7F4002E2CFE /* iOS_Android.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Android.swift; sourceTree = "<group>"; };
 		6387FD972A11FDCA002E2CFE /* P256Curve_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P256Curve_Test.swift; sourceTree = "<group>"; };
 		6387FD992A120C21002E2CFE /* ECC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ECC.md; sourceTree = "<group>"; };
+		6387FD9A2A13025B002E2CFE /* SecurityCBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCBC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				6330C75F2A0CCE9A007873BA /* AppDelegate.swift */,
 				6330C7612A0CCE9A007873BA /* SceneDelegate.swift */,
 				6330C7632A0CCE9A007873BA /* ViewController.swift */,
+				6387FD9A2A13025B002E2CFE /* SecurityCBC.swift */,
 				6330C7762A0CD293007873BA /* RSA.swift */,
 				6330C7652A0CCE9A007873BA /* Main.storyboard */,
 				6330C7682A0CCE9B007873BA /* Assets.xcassets */,
@@ -216,6 +219,7 @@
 				6330C7622A0CCE9A007873BA /* SceneDelegate.swift in Sources */,
 				6387FD982A11FDCA002E2CFE /* P256Curve_Test.swift in Sources */,
 				633524AF2A0E1EC10074A62D /* Byte.swift in Sources */,
+				6387FD9B2A13025B002E2CFE /* SecurityCBC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

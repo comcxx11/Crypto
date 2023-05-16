@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//import Security
+import Security
 import CryptoKit
 import CryptoSwift
 import Security
@@ -24,11 +24,31 @@ class ViewController: UIViewController {
         } catch {
             print(error)
         }
+        
+        // ECDH 키 쌍 생성
+        do {
+            let keyPair = try SecurityCBC().generateECDHKeyPair()
+            print("Private Key: \(keyPair.privateKey)")
+            print("Public Key: \(keyPair.publicKey)")
+            
+            let keyPair2 = try SecurityCBC().generateECDHKeyPair()
+            print("Private Key: \(keyPair.privateKey)")
+            print("Public Key: \(keyPair.publicKey)")
+            
+            let sharedKey1 = try SecurityCBC().generateSharedKey(privateKey: keyPair.privateKey, publicKey: keyPair2.publicKey)
+            let sharedKey2 = try SecurityCBC().generateSharedKey(privateKey: keyPair2.privateKey, publicKey: keyPair.publicKey)
+            print("Shared Key: \(sharedKey1)")
+            print("Shared Key: \(sharedKey1.base64EncodedString())")
+            print("Shared Key: \(sharedKey2)")
+            print("Shared Key: \(sharedKey2.base64EncodedString())")
+            
+            try SecurityCBC().HMAC_Test2(key: sharedKey1.bytes)
+            try SecurityCBC().HMAC_Test2(key: sharedKey2.bytes)
+        } catch {
+            print("ECDH 키 쌍 생성 에러: \(error)")
+        }
     }
     
-    private func HMAC() {
-        
-    }
     /**
      *  주체(subject): 인증서의 소유자를 나타내는 정보.
      *  발급자(issuer): 인증서를 발행한 인증 기관의 정보.
